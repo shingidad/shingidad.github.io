@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>승현아빠</title>
+  
+  <subtitle>개발자 아빠로 살아가기</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-13T10:59:24.685Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>shingidad</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git commit message 작성법</title>
+    <link href="http://yoursite.com/2018/05/13/git_commit_messsage/"/>
+    <id>http://yoursite.com/2018/05/13/git_commit_messsage/</id>
+    <published>2018-05-13T10:56:22.000Z</published>
+    <updated>2018-05-13T10:59:24.685Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git-Commit-message-작성법"><a href="#Git-Commit-message-작성법" class="headerlink" title="Git Commit message 작성법"></a>Git Commit message 작성법</h1><h2 id="기본적으로"><a href="#기본적으로" class="headerlink" title="기본적으로?"></a>기본적으로?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m 안녕!</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Git-Commit-message-작성법&quot;&gt;&lt;a href=&quot;#Git-Commit-message-작성법&quot; class=&quot;headerlink&quot; title=&quot;Git Commit message 작성법&quot;&gt;&lt;/a&gt;Git Commit message 작
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="commit" scheme="http://yoursite.com/tags/commit/"/>
+    
+      <category term="team" scheme="http://yoursite.com/tags/team/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJS Mac 삭제방법</title>
+    <link href="http://yoursite.com/2018/05/13/nodejs_mac_uninstall/"/>
+    <id>http://yoursite.com/2018/05/13/nodejs_mac_uninstall/</id>
+    <published>2018-05-13T07:26:03.000Z</published>
+    <updated>2018-05-13T07:32:26.552Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="install" scheme="http://yoursite.com/tags/install/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJS Mac 설치방법</title>
+    <link href="http://yoursite.com/2018/05/13/nodejs_mac_install/"/>
+    <id>http://yoursite.com/2018/05/13/nodejs_mac_install/</id>
+    <published>2018-05-13T07:24:55.000Z</published>
+    <updated>2018-05-13T07:29:52.873Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="NodeJS-Mac-설치방법"><a href="#NodeJS-Mac-설치방법" class="headerlink" title="NodeJS Mac 설치방법"></a>NodeJS Mac 설치방법</h1><hr><p>여러 방법이 있지만 Mac에서는 brew 로 설치하는게 가장 좋습니다.<br>이유는 사실 별거 없이, permission denied 오류랑 관리하기 편하다는 이슈 뿐입니다.</p><p>그치만 nodejs 홈페이지에 접속해서 다운로드 누르고 승인하고 하는 것보다<br>터미널에 한줄만 입력하면 되니 더 간단하죠</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;NodeJS-Mac-설치방법&quot;&gt;&lt;a href=&quot;#NodeJS-Mac-설치방법&quot; class=&quot;headerlink&quot; title=&quot;NodeJS Mac 설치방법&quot;&gt;&lt;/a&gt;NodeJS Mac 설치방법&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;여러 방법이 있지만 Ma
+      
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="install" scheme="http://yoursite.com/tags/install/"/>
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+  </entry>
+  
+</feed>
