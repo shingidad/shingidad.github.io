@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-13T13:17:56.025Z</updated>
+  <updated>2018-05-13T13:41:46.356Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React Redux 셋팅하기</title>
+    <link href="http://yoursite.com/2018/05/13/01-react-redux/"/>
+    <id>http://yoursite.com/2018/05/13/01-react-redux/</id>
+    <published>2018-05-13T13:38:02.000Z</published>
+    <updated>2018-05-13T13:41:46.356Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="React-Project-에-Redux-추가하기"><a href="#React-Project-에-Redux-추가하기" class="headerlink" title="React Project 에 Redux 추가하기"></a>React Project 에 Redux 추가하기</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install i --save redux react-redux redux-logger redux-thunk</span><br></pre></td></tr></table></figure><p>.<br>├── src<br>│   ├── App.css<br>│   ├── App.js<br>│   ├── index.css<br>│   ├── index.js<br>│   ├── logo.svg<br>│   ├── reducers<br>│   │   └── index.js<br>│   └── registerServiceWorker.js</p><h3 id="src-index-js"><a href="#src-index-js" class="headerlink" title="src/index.js"></a>src/index.js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// redux setting</span></span><br><span class="line"><span class="keyword">import</span> &#123; applyMiddleware, createStore &#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Provider &#125; <span class="keyword">from</span> <span class="string">'react-redux'</span>;</span><br><span class="line"><span class="keyword">import</span> thunk <span class="keyword">from</span> <span class="string">'redux-thunk'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; createLogger &#125; <span class="keyword">from</span> <span class="string">'redux-logger'</span>;</span><br><span class="line"><span class="comment">// your reducer </span></span><br><span class="line"><span class="keyword">import</span> reducer <span class="keyword">from</span> <span class="string">'./reducers'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Store 가져오기</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> getStore = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (process.env.NODE_ENV === <span class="string">'development'</span>) &#123;</span><br><span class="line">    <span class="comment">// 개발 모드일 경우, redux tool 연결</span></span><br><span class="line">    <span class="keyword">const</span> middleware = applyMiddleware(thunk, createLogger());</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION__) &#123;</span><br><span class="line">      <span class="keyword">return</span> createStore(reducers, <span class="built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION__(), middleware);</span><br><span class="line">    &#125; <span class="keyword">return</span> createStore(reducers, middleware);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> createStore(reducers, applyMiddleware(thunk));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(React.createElement(Provider, &#123; <span class="attr">store</span>: getStore() &#125;, React.createElement(App)), <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure><h3 id="src-reducers-index-js"><a href="#src-reducers-index-js" class="headerlink" title="src/reducers/index.js"></a>src/reducers/index.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import &#123; combineReducers &#125; from <span class="string">'redux'</span>;</span><br><span class="line"><span class="built_in">export</span> default combineReducers(&#123;&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;React-Project-에-Redux-추가하기&quot;&gt;&lt;a href=&quot;#React-Project-에-Redux-추가하기&quot; class=&quot;headerlink&quot; title=&quot;React Project 에 Redux 추가하기&quot;&gt;&lt;/a&gt;React Pr
+      
+    
+    </summary>
+    
+    
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
+    
+      <category term="react.js" scheme="http://yoursite.com/tags/react-js/"/>
+    
+      <category term="redux" scheme="http://yoursite.com/tags/redux/"/>
+    
+  </entry>
   
   <entry>
     <title>Git Commit Message 작성법</title>
@@ -62,11 +89,11 @@
     
       <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
     
+      <category term="uninstall" scheme="http://yoursite.com/tags/uninstall/"/>
+    
       <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
     
       <category term="brew" scheme="http://yoursite.com/tags/brew/"/>
-    
-      <category term="uninstall" scheme="http://yoursite.com/tags/uninstall/"/>
     
   </entry>
   
@@ -92,11 +119,11 @@
     
       <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
     
-      <category term="install" scheme="http://yoursite.com/tags/install/"/>
-    
       <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
     
       <category term="brew" scheme="http://yoursite.com/tags/brew/"/>
+    
+      <category term="install" scheme="http://yoursite.com/tags/install/"/>
     
   </entry>
   
