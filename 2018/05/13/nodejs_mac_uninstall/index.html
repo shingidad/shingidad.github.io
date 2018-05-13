@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="NodeJS Mac 삭제방법"/>
+        <meta property="og:title" content="Mac에서 NodeJS + NPM 삭제 방법"/>
     
 
     <!--Open Graph Description-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>NodeJS Mac 삭제방법 - 승현아빠</title>
+    <title>Mac에서 NodeJS + NPM 삭제 방법 - 승현아빠</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>NodeJS Mac 삭제방법</h1>
+                    <h1>Mac에서 NodeJS + NPM 삭제 방법</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -165,7 +165,7 @@
                         
 
 
-<a href="/tags/nodejs/">#nodejs</a> <a href="/tags/install/">#install</a> <a href="/tags/mac/">#mac</a>
+<a href="/tags/nodejs/">#nodejs</a> <a href="/tags/mac/">#mac</a> <a href="/tags/brew/">#brew</a> <a href="/tags/uninstall/">#uninstall</a>
 
 
                     
@@ -180,7 +180,12 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
+                <h1 id="Mac에서-NodeJS-NPM-삭제-방법"><a href="#Mac에서-NodeJS-NPM-삭제-방법" class="headerlink" title="Mac에서 NodeJS + NPM 삭제 방법"></a>Mac에서 NodeJS + NPM 삭제 방법</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ lsbom -f -l -s -pf /var/db/receipts/org.nodejs.pkg.bom | <span class="keyword">while</span> <span class="built_in">read</span> f; <span class="keyword">do</span>  sudo rm /usr/<span class="built_in">local</span>/<span class="variable">$&#123;f&#125;</span>; <span class="keyword">done</span></span><br><span class="line">$ sudo rm -rf /usr/<span class="built_in">local</span>/lib/node /usr/<span class="built_in">local</span>/lib/node_modules /var/db/receipts/org.nodejs.*</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/lib</span><br><span class="line">$ sudo rm -rf node*</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/include</span><br><span class="line">$ sudo rm -rf node*</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew uninstall node</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd /usr/local/bin</span><br><span class="line">$ sudo rm -rf /usr/local/bin/npm</span><br><span class="line">$ sudo rm -rf /usr/local/bin/node</span><br><span class="line">$ ls -las</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo rm -rf /usr/<span class="built_in">local</span>/share/man/man1/node.1</span><br><span class="line">$ sudo rm -rf /usr/<span class="built_in">local</span>/lib/dtrace/node.d</span><br><span class="line">$ sudo rm -rf ~/.npm</span><br></pre></td></tr></table></figure>
 
                 
                     <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -202,21 +207,6 @@
     </div>
 
 
-
-    <hr />
-    <h3>Comments:</h3>
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <div class="fb-comments" data-href="http://yoursite.com/2018/05/13/nodejs_mac_uninstall/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
 
                 </div>
             
