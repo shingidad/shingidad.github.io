@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-13T13:41:46.356Z</updated>
+  <updated>2018-05-14T00:20:56.169Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu NTP 설정</title>
+    <link href="http://yoursite.com/2018/05/14/ubuntu_ntp_setting/"/>
+    <id>http://yoursite.com/2018/05/14/ubuntu_ntp_setting/</id>
+    <published>2018-05-14T00:19:14.000Z</published>
+    <updated>2018-05-14T00:20:56.169Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Ubuntu-NTP-설정"><a href="#Ubuntu-NTP-설정" class="headerlink" title="Ubuntu NTP 설정"></a>Ubuntu NTP 설정</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ntp</span><br></pre></td></tr></table></figure><p>ntp 설정 열기<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ntp.conf</span><br><span class="line">`</span><br></pre></td></tr></table></figure></p><p>config 에 server <code>원하는 주소</code> 추가</p><ul><li><code>iburst</code> : ntp demon 이 실행되고서 ntp 서버와 시간차가 날 경우(10~15) 즉시 동기화 한다.</li><li><code>dynamic</code> : 만약 서버가 연결되지 않을 경우, 다시 연결시도</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 원하는 서버 추가</span><br><span class="line">server 서버주소 iburst dynamic</span><br></pre></td></tr></table></figure><p>npt restart<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/ntp restart</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Ubuntu-NTP-설정&quot;&gt;&lt;a href=&quot;#Ubuntu-NTP-설정&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu NTP 설정&quot;&gt;&lt;/a&gt;Ubuntu NTP 설정&lt;/h1&gt;&lt;figure class=&quot;highlight bash
+      
+    
+    </summary>
+    
+    
+      <category term="ubuntu" scheme="http://yoursite.com/tags/ubuntu/"/>
+    
+      <category term="ntp" scheme="http://yoursite.com/tags/ntp/"/>
+    
+  </entry>
   
   <entry>
     <title>React Redux 셋팅하기</title>
